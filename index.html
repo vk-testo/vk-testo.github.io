@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Кем бы ты был в средневековье?</title>
+	<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div class="frame">
+	<h1>Кем бы ты был в средневековье?</h1>
+
+	<div id="welcome">
+		<p>Средневековье - одна из самых интересных эпох. Время благородных рыцарей и прекрасных дам, расцвета Католической церкви, крестовых походов, смертоносных эпидемий, феодализма, великих творений в области исскуства, неожиданных открытий.</p>
+		<p>Попробуйте спроэцировать себя в средневековье, честно отвечая на вопросы.</p>
+		<button id="start">Начать!</button>
+	</div>
+		<div class="merchant">
+		<figure>
+			<img class="photo" src="img/merchant.jpg">
+		</figure>
+		<div class="description">
+		<p>Вы - купец. Вы знаете как заработать денег и везде находите выгоду. Средневековый купец, в отличии от нынешних бизнесменов, подвргал себя множеству смертельных опасностей. Он самостоятельно отправлялся в другие страны за товароми, по суше или морю. На его пути всегда встречались разбойники и пираты, так что он всегда должен был быть начеку. Купца того времени можно охарактеризовать как человека, не боявшегося рисковать.</p>
+		</div>
+		</div>
+
+		<div class="knight">
+		<figure>
+			<img class="photo" src="img/knight.jpg">
+		</figure>
+		<div class="description">
+		<p>Вы - рыцарь. Вы мужественны и сильны, вас не испугать. Главной вашей ценностью является честь и достоинство. Быть
+		рыцарем в средние века - крайне почетно. У вас есть своя земля, крестьяне, и, скорее всего, свой замок. В замен на это все, вы должны по первому зову явиться к своему лорду или королю. Благодаря верному коню и мечу, а так же многочисленным тренировкам, в сражениях рыцари считались элитными войсками.</p>
+		</div>
+		</div>
+
+		<div class="pop">
+		<figure>
+			<img class="photo" src="img/pop.png">
+		</figure>
+		<div class="description">
+		<p>Вы - монах. Вы решили всю свою жизнь посвятить служению богу, отреклись от своего имущества и дали обет безбрачия. Вы всегда протянете руку помощи тем, кто в ней нуждается. В средневековье церковь обладала намного большей властью, чем в современном мире - церковь подчинила себе политику, мораль, науку, образование и искусство. Христианство присутствовало в каждом доме, а тех, кто не признавал его, объявляли еретиком и сжигали.</p>
+		</div>
+		</div>
+
+		<div class="bard">
+		<figure>
+			<img class="photo" src="img/bard.jpg">
+		</figure>
+		<div class="description">
+		<p>Вы - менестрель. Вы сочиняете стихи и поете собственные песни. Образ жизни менестрелей представляется нам романтичным: они странствовали, сочиняли песни о любви и подвигах, очаровывали прекрасных дам. Некоторые из них даже могли подражать голосам птиц. Каждый уважающий себя менестрель должен был знать одно из самых популярных произведений того времени -  «Песнь о Роланде», состоявшую из четырёх тысяч строк.</p>
+		</div>
+		</div>
+
+		<div class="doctor">
+		<figure>
+			<img class="photo" src="img/doctor.jpg">
+		</figure>
+		<div class="description">
+		<p>Вы - чумной доктор. Вашей основной обязанностью являлось лечение больных «черной смертью» - бубонной чумой. Отличительной особенностью чумных докторов являлся особый защитный костюм с оригинальной «носатой» маской, напоминающей клюв птицы. Благодаря вашему необычному костюму вас окружал мистический ореол. Больные при виде вас приходили в ужас. Самой популярной процедурой было кровопускание - считалось, что вместе с кровью выходит и болезнь.</p>
+		</div>
+		</div>
+
+		<div class="alch">
+		<figure>
+			<img class="photo" src="img/alch.jpg">
+		</figure>
+		<div class="description">
+		<p>Вы - алхимик. Алхимия в средние века представляла собой смесь науки, философии и мистики. Многие алхимики годами пытались создать философский камень - некий реактив, необходимый для успешного осуществления превращения металлов в золото, а также для создания эликсира жизни. Но хотя он так и не был создан, опыт в его поисках был крайне полезен, ведь на руинах алхимии выросла новая наука - химия.</p>
+		</div>
+		</div>
+	<div class="wrapper">
+		<div class="progress-bar blue stripes">
+			<span style="width: 0%"></span>
+		</div>
+		<label id="question"></label><br>
+
+		<input type="radio" name="ex" id="answer1"><label for="answer1" id="option1"><span></span></label><br>
+		<input type="radio" name="ex" id="answer2"><label for="answer2" id="option2"><span></span></label><br>
+		<input type="radio" name="ex" id="answer3"><label for="answer3" id="option3"><span></span></label><br>
+		<input type="radio" name="ex" id="answer4"><label for="answer4" id="option4"><span></span></label><br>
+		<input type="radio" name="ex" id="answer5"><label for="answer5" id="option5"><span></span></label><br>
+		<input type="radio" name="ex" id="answer6"><label for="answer6" id="option6"><span></span></label><br>
+	</div>
+
+	<button id="next">Далее</button>
+
+</div>
+<script type="text/javascript">
+  VK.init(function() {
+		$().ready(function(){
+	 //Массив вопросов и ответа
+	 var data_array = [
+		 ["1)По пути домой вы натыкаетесь на толпу народа, которая наблюдает за дракой между двумя людьми. Подойдя поближе вы обнаруживаете, что один из драчунов без сознания, а второй явно в неадекватном состоянии. Ваши действия:", "пройти мимо","накосылять тому, кто остался в сознании","помолиться","попытатся утихомирить драчуна и толпу людей", "оказать первую помощь пострадавшему", "позвонить в скорую и полицию"],
+		 ["2)К чему в первую очередь должен стремиться человек?","богатство","мир над головой","вера","развлечения", "здоровое тело и ум", "знания"],
+		 ["3)Кем ты хотел стать в детстве?","бизнесменом","генералом","богом","известным актером", "врачом", "ученым"],
+		 ["4)Как вы проводите свободное время?","у меня нет свободного времени, я всегда учусь/работаю","тренажорный зал, турники","помогаю другим людям, волонтерство","музыка, фильмы, игры", "гуляю на свежем воздухе", "читаю книги"],
+		 ["5)Государство по праву может называться великим, если","оно обладает большим запасом природных ресурсов","у государства самая мощная армия","оно является религиозной столицей мира","там живут счастливые люди", "продолжительность жизни людей выше, чем в какой-либо другой стране", "в нем родились великие ученые, которые открыли передовые технологии"],
+		 ["6)В какой стране вы бы хотели побывать?","США","Северная Корея","Ватикан","Нидерланды", "Япония", "Великобритания"],
+		 ["7)Какое качество восхищает вас в людях?","хитрость","надежность","доброта","креативность", "ответственность", "ум"],
+		 ["8)Ваше жизненное кредо","не делай бесплатно то, что можешь сделать за деньги","то, что нас не убивает, делает нас сильнее","в борьбе победа за тем, кто силен духом","деньги можно кидать на ветер, пока ветер дует в твою сторону", "быть счастливым счастьем других - вот настоящее счастье", "все победы начинаются с побед над самим собой"],
+		 ["9)Как вы настраиваете себя на важную встречу?","никак, я и так уверен в себе","подбодрю себя в духе: \"Я сделаю это!!!\"","молюсь","послушаю мотивирующую музыку", "выпью витаминку/успокоительное", "продумаю каждый свой шаг"],
+		 ["10)С кем из них вы бы пошли на разведку?","Стив Джобс","Александр Суворов","Папа Римский","Майкл Джексон", "Гиппократ", "Альберт Энштейн"],
+	 ];
+
+	 var cur_answer = 0;
+	 var estates_array = [0, 0, 0, 0, 0, 0];
+	 var flag = false;
+	 var width = 0;
+
+	 $('#start').click(function(){
+
+					 $('.wrapper').css("display", "block");
+					 $('#welcome').css("display", "none");
+					 $('#start').css("display", "none");
+					 $('#next').css("display", "inline-block");
+
+					 $("#question").append("<p class=" + 'insertqw' + ">" + data_array[cur_answer][0] + "</p>");
+					 $("#option1").append("<p class=" + 'insert' + ">" + data_array[cur_answer][1] + "</p>");
+					 $("#option2").append("<p class=" + 'insert' + ">" + data_array[cur_answer][2] + "</p>");
+					 $("#option3").append("<p class=" + 'insert' + ">" + data_array[cur_answer][3] + "</p>");
+					 $("#option4").append("<p class=" + 'insert' + ">" + data_array[cur_answer][4] + "</p>");
+					 $("#option5").append("<p class=" + 'insert' + ">" + data_array[cur_answer][5] + "</p>");
+					 $("#option6").append("<p class=" + 'insert' + ">" + data_array[cur_answer][6] + "</p>");
+
+					 $('#next').click(function(){
+							 flag = false;
+							 if ($('#answer1').prop("checked")) {cur_answer++; flag = true; estates_array[0]++; $('#answer1').prop('checked',false);}
+							 if ($('#answer2').prop("checked")) {cur_answer++; flag = true; estates_array[1]++; $('#answer2').prop('checked',false);}
+							 if ($('#answer3').prop("checked")) {cur_answer++; flag = true; estates_array[2]++; $('#answer3').prop('checked',false);}
+							 if ($('#answer4').prop("checked")) {cur_answer++; flag = true; estates_array[3]++; $('#answer4').prop('checked',false);}
+							 if ($('#answer5').prop("checked")) {cur_answer++; flag = true; estates_array[4]++; $('#answer5').prop('checked',false);}
+							 if ($('#answer6').prop("checked")) {cur_answer++; flag = true; estates_array[5]++; $('#answer6').prop('checked',false);}
+							 if (flag == false) {}
+								 else{
+									 width = width + 10;
+									 $('.progress-bar span').width(width + '%');
+								 }
+							 if (cur_answer < 10){
+									 $('.insert').remove();
+									 $('.insertqw').remove();
+									 $("#question").append("<p class=" + 'insertqw' + ">" + data_array[cur_answer][0] + "</p>");
+									 $("#option1").append("<p class=" + 'insert' + ">" + data_array[cur_answer][1] + "</p>");
+									 $("#option2").append("<p class=" + 'insert' + ">" + data_array[cur_answer][2] + "</p>");
+									 $("#option3").append("<p class=" + 'insert' + ">" + data_array[cur_answer][3] + "</p>");
+									 $("#option4").append("<p class=" + 'insert' + ">" + data_array[cur_answer][4] + "</p>");
+									 $("#option5").append("<p class=" + 'insert' + ">" + data_array[cur_answer][5] + "</p>");
+									 $("#option6").append("<p class=" + 'insert' + ">" + data_array[cur_answer][6] + "</p>");
+							 }
+
+							 else{
+										$('.wrapper').css("display", "none");
+										$('#next').css("display", "none");
+									 var result = estates_array.indexOf(Math.max.apply(Math, estates_array));
+									 if (result == 0){
+										 $('.merchant').css("display", "block");
+										 VK.api("wall.createComment", {"owner_id": "xxx","post_id": "xxx","message": "xxx"}, function (data) {
+											alert("Post ID:" + data.response.post_id);
+											});
+									 }
+									 if (result == 1){
+										 $('.knight').css("display", "block");
+									 }
+									 if (result == 2){
+										 $('.pop').css("display", "block");
+									 }
+									 if (result == 3){
+										 $('.bard').css("display", "block");
+									 }
+									 if (result == 4){
+										 $('.doctor').css("display", "block");
+									 }
+									 if (result == 5){
+										 $('.alch').css("display", "block");
+									 }
+							 }
+					 });
+
+	 });
+	 });
+  }, function() {
+     // API initialization failed
+     // Can reload page here
+}, '5.62');
+</script>
+
+
+</body>
+</html>
